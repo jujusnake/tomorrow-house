@@ -1,15 +1,20 @@
 * {
   margin: 0;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: $font-main;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  // https://developer.mozilla.org/en-US/docs/Web/CSS/font-smooth -> 폰트를 더 부드럽게 처리
   box-sizing: border-box;
 }
 
 html {
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: $font-main;
+  font-size: $font-size-16;
 }
 
 body {
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: $font-main;
+  color: $primary;
 }
 
 h1 {
@@ -25,8 +30,8 @@ button,
 input,
 select,
 textarea {
-  border: 0;
   background-color: transparent;
+  border: 0;
 
   &:focus {
     outline: none;
