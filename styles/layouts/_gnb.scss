@@ -19,8 +19,11 @@
 
   .logo {
     @include pos-center;
+
     a {
       display: block;
+      padding: 8px;
+      margin: 0 -8px;
     }
 
     img {
