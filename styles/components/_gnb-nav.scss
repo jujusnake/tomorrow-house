@@ -7,7 +7,7 @@
   }
 
   &-item {
-    margin-right: 24px - ($padding * 2);
+    margin-right: 24px -#{$padding * 2};
 
     &.is-active,
     &:hover {
