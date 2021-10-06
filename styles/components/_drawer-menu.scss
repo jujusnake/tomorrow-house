@@ -1,6 +1,6 @@
 .drawer-menu {
   $drawer-height: 36px;
-  $drawer-menu-list-padding: 8px;
+  $drawer-menu-list-padding: 20px;
   $community-lenght: 8;
   $store-lenght: 9;
   $expert-lenght: 2;
@@ -8,8 +8,6 @@
   @function _calculate-max-content-height($lenght) {
     @return $drawer-height * $lenght + $drawer-menu-list-padding;
   }
-
-  border-top: $border 1px solid;
 
   &.is-active {
     .drawer-menu-button {
@@ -41,7 +39,7 @@
     }
 
     .drawer-menu-list {
-      padding-bottom: 8px;
+      padding-bottom: $drawer-menu-list-padding;
     }
   }
 
