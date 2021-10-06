@@ -62,4 +62,35 @@ body {
       width: 84px;
     }
   }
+
+  &-nav {
+    .drawer-menu {
+      border-top: 1px $border solid;
+
+      &.is-expert {
+        border-bottom: 1px $border solid;
+      }
+    }
+  }
+
+  &-user-menu {
+    .user-menu-list {
+      margin-top: 16px;
+      // is-expert에서 margin-bottom 안준거는, 로그인 안했을 때를 대비하기 위해
+    }
+
+    .user-menu-item {
+      a {
+        @include flexbox(start);
+        @include text-style(14, $primary);
+        width: 100%;
+        height: 36px;
+        padding: 0 12px;
+
+        &:active {
+          color: $blue;
+        }
+      }
+    }
+  }
 }
