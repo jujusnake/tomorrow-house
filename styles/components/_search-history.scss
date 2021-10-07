@@ -23,6 +23,11 @@
 
   &-item {
     position: relative;
+    border-radius: 2px;
+
+    &:hover {
+      background-color: $background;
+    }
 
     .word-button {
       @include text-style(16, $primary);
@@ -35,12 +40,16 @@
     .delete-button {
       @include flexbox;
       position: absolute;
-      right: 0;
       top: 6px;
+      right: 0;
       width: $close-button-size;
       height: $close-button-size;
       font-size: 16px;
       color: $tertiary;
+
+      &:hover {
+        color: $primary;
+      }
     }
   }
 }
