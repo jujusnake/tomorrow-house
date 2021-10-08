@@ -29,6 +29,7 @@
 @import './components/my-menu';
 @import './components/drawer-menu';
 @import './components/search-history';
+@import './constants/dimensions';
 
 @import './layouts/grids';
 @import './layouts/gnb';
@@ -36,4 +37,5 @@
 @import './layouts/overlay';
 @import './layouts/search-modal';
 @import './layouts/lnb';
+@import './layouts/global-header';
 @import './layouts/global-footer';
