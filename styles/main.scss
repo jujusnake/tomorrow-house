@@ -2,6 +2,7 @@
 @import './constants/typography';
 @import './constants/breakpoints';
 @import './constants/box-shadows';
+@import './constants/dimensions';
 @import './constants/z-indexes';
 
 @import './base/fonts';
@@ -29,7 +30,6 @@
 @import './components/my-menu';
 @import './components/drawer-menu';
 @import './components/search-history';
-@import './constants/dimensions';
 @import './components/breadcrumb';
 
 @import './layouts/grids';
