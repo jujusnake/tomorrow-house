@@ -97,4 +97,31 @@
       }
     }
   }
+
+  @include responsive(D) {
+    @include flexbox(end, start);
+    flex-direction: row-reverse;
+
+    &-slider {
+      width: 500px;
+    }
+
+    .thumbnail-list {
+      flex-direction: column;
+    }
+
+    .thumbnail-item {
+      margin: 0 8px 8px 0;
+
+      &:last-child {
+        margin: 0 8px 0 0;
+      }
+
+      button,
+      img {
+        width: 75px;
+        height: 75px;
+      }
+    }
+  }
 }
